@@ -198,6 +198,8 @@ form button:hover {
     margin-top: 20px;
 }
 
+
+
 /* Responsive design */
 @media (max-width: 768px) {
     .hamburger {
@@ -219,13 +221,33 @@ form button:hover {
         display: flex;
     }
 
-    header,
-    section,
-    footer {
-        padding: 20px;
+    header {
+        padding: 20px; /* Reduce header padding */
+    }
+
+    .hero-content {
+        margin-top: 50px; /* Adjust margin for hero content */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; /* Decrease font size for smaller screens */
     }
 
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack services vertically */
+    }
+
+    .container img {
+        max-width: 100%; /* Ensure images are responsive */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    .service-card {
+        margin-bottom: 20px; /* Add space between service cards */
+    }
+
+    .service-img {
+        max-width: 100%; /* Ensure images are responsive */
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
     }
 }
